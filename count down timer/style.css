@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./clock.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+h1{
+    font-weight: normal;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+.countdown-container{
+    display: flex;
+}
+
+.big-text{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin:0 2rem;
+}
+.countdown-el{
+    text-align: center;
+}
+.countdown-el span{
+    font-size: 1.5rem;
+}
+.event-value{
+    font-size: 1.5rem;
+    margin: 6rem;
+    display: flex;
+}
+.event-value{
+    justify-content: center;
+    align-items: center;
+}
+#date{
+    margin: 1rem 0 0 1rem;
+    background-color: rgb(243, 241, 241);
+    outline: none;
+    border: none;
+    padding: 2px 18px;
+    border-radius: 22px;
+    bottom: 10px;
+    cursor: pointer;
+}
+#event-name{
+    margin-top: 5rem;
+    background-color: rgb(212, 207, 207);
+    border: none;
+    outline: none;
+    display: inline-block;
+    height: 25px;
+    vertical-align: baseline;
+    position: relative;
+    bottom: 4px;
+    left: 8px;
+    border-radius: 22px;
+    width: 220px;
+    padding: 0 18px;
+}
+
+#submit{
+    background: rgb(158, 32, 167);
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    margin: 1rem 10.5rem;
+    font-size: large;
+    border-radius: 22px;
+    border: none;
+    padding: 8px 18px;
+}

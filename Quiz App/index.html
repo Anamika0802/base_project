@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz App</title>
+        <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="input-container">
+                <div class="input-fields">
+                        <h2>New Quiz</h2>
+                        <form class="input-form" id = "input-form">
+                                <label for="ques">Enter Question: </label>
+                                <input type = 'text'placeholder ='ques' id='ques' required ="required"><br>
+                                <label for="option-a">Enter Option a: </label>
+                                <input type = 'text'placeholder ='option a' id='option-a' required ="required"><br>
+                                <label for="option-b">Enter Option b: </label>
+                                <input type = 'text'placeholder ='option b' id='option-b' required ="required"><br>
+                                <label for="option-c">Enter Option c: </label>
+                                <input type = 'text'placeholder ='option c' id='option-c' required ="required"><br>
+                                <label for="option-d">Enter Option d: </label>
+                                <input type = 'text'placeholder ='option d' id='option-d' required ="required"><br>
+                                <label for="answer">Choose Answer: </label>
+                                <select id="ans" form="input-form">
+                                        <option value="1">a</option>
+                                        <option value="2">b</option>
+                                        <option value="3">c</option>
+                                        <option value="4">d</option>
+                                </select><br>
+                                <button type ='button' onclick='addEl()' class="input-button">add</button>
+                                <button type="button" onclick='finishQuiz()' class="input-button">finish</button> 
+                        </form>
+                        
+                </div>
+        </div>
+        <div class="quiz-area" id ="quiz">
+                <div class="quiz-header">
+                        <form>
+                        <h2 class="ques">Question</h2>
+                                <ul class="options">
+                                        <li>
+                                                <input type ="radio" id = "1" name ="answer" class="answer">
+                                                <label for="1" id = "a">Option one</label>
+                                        </li>
+                                        <li>
+                                                <input type ="radio" id = "2" name ="answer" class="answer">
+                                                <label for="2" id = "b">Option two</label>
+                                        </li>
+                                        <li>
+                                                <input type ="radio" id = "3" name ="answer"class="answer">
+                                                <label for="3" id = "c">Option three</label>
+                                        </li>
+                                        <li>
+                                                <input type ="radio" id = "4" name ="answer" class="answer">
+                                                <label for="4" id = "d">Option four</label>
+                                        </li>
+                                </ul>
+                </div>
+                         <button type = button class="submit" onclick="loadmainQuiz()">Submit</button>
+                </form>
+        </div>
+        <div id = "createQuiz">
+        <button  type = button id = "createQuizbtn" onclick="createQuiz()">Create New Quiz</button>
+        </div>
+
+        <script src = "script.js"></script>
+</body>
+</html>

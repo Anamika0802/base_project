@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Count Down Timer</title>
+        <link rel ="stylesheet" href="style.css">
+        
+</head>
+<body>
+        <h1 id = "your-event">New Year</h1>
+        
+        <div class="countdown-container" >
+                <div class="countdown-el days-c">
+                        <p class="big-text" id="days" >0</p>
+                        <span>days</span>
+
+                </div>
+                <div class="countdown-el hours-c">
+                        <p class="big-text" id="hours" >0</p>
+                        <span>hours</span>
+
+                </div><div class="countdown-el minutes-c">
+                        <p class="big-text" id="minutes" >0</p>
+                        <span>minutes</span>
+                </div>
+                <div class="countdown-el seconds-c">
+                        <p class="big-text" id="seconds" >0</p>
+                        <span>seconds</span>
+
+                </div>
+        </div>
+        <div class="event-value">
+                <form>
+                        <label for = "event-name">Enter Your Event Name:</label>
+                        <input type = "text" id = "event-name" required="required"><br>
+                        <label for = "date">Enter Your Event Date:</label>
+                        <input type="date" id="date" required= "required"><br>
+                        <button type="button" onclick="changeEvent()" id="submit">Set Event</button>
+                </form>
+
+        </div>
+
+        <!-- Always load JS at the end of of the page if you require it do tasks on its own -->
+        <!-- Because What was happening was as soon as the page loaded up, the JS was loaded before the HTML part -->
+        <!-- And that is why it couldn't find "hi" -->
+        <!-- But now HTML is loaded first so you already have hi -->
+        <script src = "script.js"></script>
+</body>
+</html>
